@@ -1,8 +1,7 @@
 import React, {useState, useEffect} from 'react';
-import axios from "axios";
-// import './App.css';
-import Characters from "./components/Characters";
-import styled from "styled-components";
+import axios from 'axios';
+import Characters from './components/Characters';
+import styled from 'styled-components';
 
 const StyledApp = styled.div`
   h1 {
@@ -24,7 +23,6 @@ const App = () => {
   useEffect(()=>{
     axios.get('https://swapi.co/api/people')
     .then(response => {
-      console.log(response.data.results)
       setData(response.data.results)
     })
     .catch(err => {
@@ -34,7 +32,7 @@ const App = () => {
 
   return (
     <StyledApp>
-      <h1 className="Header">React Wars</h1>
+      <h1 className='Header'>React Wars</h1>
       <Characters characterList={data}/>
     </StyledApp>
   );

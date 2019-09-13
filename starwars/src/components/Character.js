@@ -1,6 +1,6 @@
-import React from "react";
-import styled from "styled-components";
-import img from "../img/star_wars5.jpg"
+import React from 'react';
+import styled from 'styled-components';
+import img from '../img/star_wars5.jpg'
 
 const StyledChr = styled.div`
     background-image: url(${img});

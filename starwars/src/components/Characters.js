@@ -1,6 +1,6 @@
-import React from "react";
-import Character from "./Character";
-import styled from "styled-components";
+import React from 'react';
+import Character from './Character';
+import styled from 'styled-components';
 
 const StyledChrs = styled.div`
   display: flex;
