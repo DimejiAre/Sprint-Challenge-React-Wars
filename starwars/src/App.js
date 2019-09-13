@@ -1,7 +1,16 @@
 import React, {useState, useEffect} from 'react';
 import axios from "axios";
-import './App.css';
+// import './App.css';
 import Characters from "./components/Characters";
+import styled from "styled-components";
+
+const StyledApp = styled.div`
+  h1 {
+    text-align: center;
+    color: #443e3e;
+    text-shadow: 1px 1px 5px #fff;
+  }
+`;
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -24,10 +33,10 @@ const App = () => {
   },[])
 
   return (
-    <div className="App">
+    <StyledApp>
       <h1 className="Header">React Wars</h1>
       <Characters characterList={data}/>
-    </div>
+    </StyledApp>
   );
 }
 
