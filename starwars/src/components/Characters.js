@@ -1,7 +1,7 @@
 import React from "react";
 import Character from "./Character";
 
-function Characters(characterList){
+function Characters(props){
     const {characterList} = props;
 
     return (
